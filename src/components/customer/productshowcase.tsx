@@ -127,7 +127,7 @@ export default function ProductShowcase({
             icon={<WhatsAppOutlined />}
             size="large"
             className={styles.whatsappButton}
-            onClick={() => window.open("https://wa.me/", "_blank")}
+            onClick={() => window.open("https://wa.me/923377638063", "_blank")}
           >
             Contact on WhatsApp
           </Button>
