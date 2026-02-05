@@ -1,0 +1,141 @@
+.container {
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 240, 255, 0.2);
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #00f0ff 0%, #8338ec 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
+.form {
+  margin-top: 2rem;
+}
+
+.input {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(0, 240, 255, 0.3) !important;
+  color: var(--text-primary) !important;
+  font-size: 1rem;
+}
+
+.input:hover,
+.input:focus {
+  border-color: var(--primary) !important;
+  box-shadow: 0 0 10px rgba(0, 240, 255, 0.3) !important;
+}
+
+.priceRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.priceInput {
+  flex: 1;
+}
+
+.textarea {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(0, 240, 255, 0.3) !important;
+  color: var(--text-primary) !important;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+.textarea:hover,
+.textarea:focus {
+  border-color: var(--primary) !important;
+  box-shadow: 0 0 10px rgba(0, 240, 255, 0.3) !important;
+}
+
+.form :global(.ant-form-item-label > label) {
+  color: #ffffff;
+}
+
+.inputNumber input::placeholder {
+  color: #718096 !important;
+  opacity: 1;
+}
+.inputNumber input {
+  color: #ffffff !important;
+}
+
+.dragger {
+  background: rgba(255, 255, 255, 0.03) !important;
+  border: 2px dashed rgba(0, 240, 255, 0.4) !important;
+  border-radius: 12px !important;
+  padding: 2rem !important;
+  transition: all 0.3s ease;
+}
+
+.dragger:hover {
+  border-color: var(--primary) !important;
+  background: rgba(0, 240, 255, 0.05) !important;
+}
+
+.draggerIcon {
+  font-size: 3rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.draggerText {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.draggerHint {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.submitButton {
+  height: 50px !important;
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+  border-radius: 8px !important;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .priceRow {
+    grid-template-columns: 1fr;
+  }
+
+  .dragger {
+    padding: 1.5rem !important;
+  }
+}

@@ -25,7 +25,7 @@ export interface LaptopWithRange extends Laptop {
 
 export interface UploadFormData {
   rangeId: string;
-  rangeName: string;
+  productName: string;
   minPrice: number;
   maxPrice: number;
   description: string;
