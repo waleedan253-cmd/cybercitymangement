@@ -64,7 +64,10 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "CyberCity - Laptop Management",
   description: "Modern laptop inventory management system",
-  viewport: "width=device-width, initial-scale=1",
+};
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({
