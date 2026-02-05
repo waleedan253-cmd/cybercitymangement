@@ -6,7 +6,7 @@ import { EyeOutlined, WhatsAppOutlined } from "@ant-design/icons";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import type { Laptop, LaptopRange } from "../../lib/types";
-import styles from "../../styles/ProductShowcase.module.css";
+import styles from "../../styles/Productshowcase.module.css";
 
 interface ProductShowcaseProps {
   range: LaptopRange;
